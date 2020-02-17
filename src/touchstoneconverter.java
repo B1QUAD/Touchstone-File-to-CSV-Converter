@@ -6,15 +6,13 @@ import java.util.*;
 import javax.swing.*;
 /**
  *
- * @author David
+ * @author David B1QUAD
  */
 public class touchstoneconverter implements ActionListener {
 
     private static String file = "";
     private int x = 0;
-    private JLabel label;
-    private JLabel label2;
-    private JLabel label3;
+    private JLabel label, label2, label3;
     private JFrame frame;
     private JPanel panel;
     private TextField tf1, tf2, tf3;
@@ -30,27 +28,23 @@ public class touchstoneconverter implements ActionListener {
         button.setBounds(10, 10, 20, 20);
         button.addActionListener(this);
 		
-		panel.setSize(10, 10);
+	panel.setSize(10, 10);
 		
         tf1 = new TextField();
         tf1.setBounds(50, 50, 150, 20);
 		
-		tf2 = new TextField();
-		tf2.setBounds(50, 50, 150, 20);
-		
-		
-		//tf2.setText("(Ghz, Mhz, Khz)");
+	tf2 = new TextField();
+	tf2.setBounds(50, 50, 150, 20);
 		
         panel.setBorder(BorderFactory.createEmptyBorder(100, 100, 100, 125));
         panel.setLayout(new GridLayout(0, 1));
         panel.add(label);
-		panel.add(tf1);
+	panel.add(tf1);
         panel.add(label2);
-		panel.add(tf2);
+	panel.add(tf2);
         panel.add(button);
         panel.add(label3);
         
-
         frame.add(panel, BorderLayout.CENTER);
         frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
         frame.setTitle("Touchstone File Converter");
