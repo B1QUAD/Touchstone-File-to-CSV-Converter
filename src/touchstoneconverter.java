@@ -4,8 +4,7 @@ import java.awt.event.*;
 import java.io.*;
 import java.util.*;
 import javax.swing.*;
-/**
- *
+/*
  * @author David B1QUAD
  */
 public class touchstoneconverter implements ActionListener {
