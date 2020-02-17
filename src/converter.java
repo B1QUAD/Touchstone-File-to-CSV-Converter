@@ -27,7 +27,7 @@ public class converter {
 		if (fPath.contains(".s1p")) {
 			type = false;
 			endBuffer = 0;
-			header = "Mhz, s11";
+			header = "Freq, s11";
 			System.out.println("s1p");
 		} else if (fPath.contains(".s2p")) {
 			type = true;
