@@ -1,0 +1,3 @@
+---
+permalink: /download.html
+---
