@@ -1,4 +1,0 @@
----
-permalink: /download.html
----
-test
