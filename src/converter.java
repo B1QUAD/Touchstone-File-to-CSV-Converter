@@ -33,7 +33,7 @@ public class converter {
 			type = true;
 			endBuffer = 4;
 			header = "Freq, s11, s21";
-			System.out.println("s2p");
+			System.out.println(".s2p");
 		} else {
 			throw new java.lang.Error("Incorrect file type, supported types are \".s1p\" and \".s2p\"");
 		}
@@ -64,10 +64,13 @@ public class converter {
 	public double convertFreq(double in){
 		switch (conversionF) {
 			case "G":
+			case "g":
 				return in / 1000000000;
 			case "M":
+			case "m":
 				return in / 1000000;
 			case "K":
+			case "k":
 				return in / 1000;
 			default:
 				return in;
@@ -101,7 +104,7 @@ public class converter {
 		}
 	}
 	public static void main(String[] args) {
-		converter test = new converter("C:\\Users\\David\\Desktop\\test.s2p");
+		converter test = new converter("C:\\Users\\David\\Desktop\\test.s2p"); // This is specific to quck testing.
 		test.simpleConverter("C:\\Users\\David\\Desktop\\test.s2p");
 	}
 }
